@@ -5,9 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style/zipcode.css">
 </head>
 <body>
     <h1>Welcome to our native trees website!</h1>
     <h2>We beleaf in you <3</h2>
+
+    <div class = "js-content content">
+        <div class = "search-title">
+            Search for native trees in your area
+        </div>
+
+        <div class="search-line">
+            <input placeholder = "Type your zipcode" 
+            class="js-zip-input zip-input" 
+            onkeydown="handleEnter(event)"> 
+
+            <button class="js-search-button search-button" 
+                    onclick="searchZip();">
+                Search
+            </button>
+        </div>
+
+
+        <div class="js-zipcode-text"></div>
+        <div class="js-plant-list plant-list"></div>
+    </div>
+    
+
+    <script src="scripts/zipcode.js"></script>
 </body>
 </html>

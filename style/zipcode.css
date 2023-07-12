@@ -1,0 +1,50 @@
+.content {
+  margin: auto;
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 20px;
+  gap: 5px;
+  align-items: center;
+}
+
+.search-title {
+  font-size: 25px;
+  padding-bottom: 10px;
+  background-color: lightblue;
+}
+
+.search-line {
+  background-color: lightcoral;
+}
+
+.zip-input {
+  font-size: 25px;
+  padding: 9px 0 9px 9px;
+  border-radius: 5px;
+}
+
+.search-button {
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 25px;
+  padding: 9px;
+  cursor: pointer;
+  background: green;
+  color: white;
+}
+
+.plant-list {
+  background-color: lightblue;
+  
+}
+
+.plant-info-row {
+  margin: auto;
+  display: flex;
+  width: 100%;
+  gap: 15px;
+  justify-content: space-between;
+  
+}
