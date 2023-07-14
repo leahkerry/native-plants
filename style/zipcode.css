@@ -1,7 +1,12 @@
+body {
+  font-family: Lato;
+}
+
 .content {
   margin: auto;
-  background-color: pink;
+  /* background-color: pink; */
   display: flex;
+  border: 2px solid black;
   flex-direction: column;
   width: 80%;
   padding: 20px;
@@ -12,11 +17,12 @@
 .search-title {
   font-size: 25px;
   padding-bottom: 10px;
-  background-color: lightblue;
+  /* background-color: lightblue; */
 }
 
 .search-line {
-  background-color: lightcoral;
+  /* background-color: lightcoral; */
+  margin-bottom: 30px;
 }
 
 .zip-input {
@@ -36,15 +42,54 @@
 }
 
 .plant-list {
-  background-color: lightblue;
-  
+  /* background-color: lightblue; */
+  display: grid;
+  gap: 10px;
 }
 
 .plant-info-row {
-  margin: auto;
-  display: flex;
-  width: 100%;
-  gap: 15px;
-  justify-content: space-between;
   
+  display: grid;
+  grid-template-columns: 100px 100px 220px 100px 100px;
+
+  gap: 10px;
+  justify-items: space-between;
+  align-items: center;
+  border-color: black;
+  border: 3px;
+  /* background-color: rgb(154, 154, 219); */
+  
+}
+
+.see-more-button,
+.add-button {
+  height: 50px;
+  border: 0px solid; 
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  color: white;
+}
+
+.see-more-button {
+  background-color: #5783db;
+}
+
+.add-button {
+  background-color: rgb(71, 153, 60);
+}
+
+.plant-icon {
+  max-height: 100px;
+  max-width: 100px;
+  object-fit: contain;;
+
+}
+
+.plant-name, .plant-description {
+
+}
+
+.plant-name {
+  font-size: 18px;
 }

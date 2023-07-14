@@ -1,16 +1,18 @@
 // example of an array
-const homePlantArr = [
-  {image: 'source', name: 'oak', description: 'little tree'},
-  {image: 'source', name: 'maple', description: 'big tree'}
-]
+// const homePlantArr = [
+//   {image: 'test-images/white_oak.jpg', name: 'White Oak', description: 'Oaks can be propagated easily from acorns and grow well in moderately moist rich soil or dry sandy soil.'},
+//   {image: 'test-images/red_maple.jpg', name: 'Red Maple', description: 'Deciduous trees  often grown for the shade they produce and their exceptional autumn color'}
+// ]
 
-const beachPlantArr = [
-  {image: 'source', name: 'beech', description: 'get it??'},
-  {image: 'source', name: 'dunes', description: 'honestly i dont know'},
-  {image: 'source', name: 'beech', description: 'get it??'}
-]
+// const beachPlantArr = [
+//   {image: 'source', name: 'beech', description: 'get it??'},
+//   {image: 'source', name: 'dunes', description: 'honestly i dont know'},
+//   {image: 'source', name: 'beech', description: 'get it??'}
+// ]
+console.log(beachPlantArr);
 
 // display current plants
+// TODO: change to 0 when you are done testing the css
 displayPlants('0');
 function displayPlants(currentZip) {
   let plantHTML = '';
@@ -20,21 +22,24 @@ function displayPlants(currentZip) {
   } else if(currentZip === `08008`){
     plantArr = beachPlantArr.slice();
   }
-  for(let i=0; i < plantArr.length; i++) {
-    const plantObj = plantArr[i];
-    const {image, name, description} = plantObj;
+
+  plantArr.forEach((plant) => {
+    //const plantObj = plantArr[i];
+    //const {image, name, description} = plantObj;
     const html = `
       <div class="plant-info-row">
-        <div>${image}</div>
-        <div>${name}</div>
-        <div>${description}</div>
-        <button>See more</button>
-        <button>Add</button>
+
+        <img class="plant-icon" src=${plant.image}>
+        <div class="plant-name">${plant.name}</div>
+        <div class="plant-description">${plant.description}</div>
+        <button class="see-more-button">See more</button>
+        <button class="add-button">Add</button>
       </div>
 
     `
     plantHTML += html;
-  }
+  });
+
   document.querySelector('.js-plant-list')
     .innerHTML = plantHTML;
 }
@@ -54,13 +59,6 @@ function searchZip() {
   const inputZip = document.querySelector('.js-zip-input');
   const zip = inputZip.value;
 
-
-  // TEST: print zipcode in console and html
-  console.log(zip);
-  const html = `<div>${zip}</div>`
-  document.querySelector('.js-zipcode-text')
-    .innerHTML = html;
-  // send zipcode to api
 
   // display tree info (test w 2 different zipcodes w json data)
   if(zip === `19460`) {
