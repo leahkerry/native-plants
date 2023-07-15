@@ -1,14 +1,4 @@
-// example of an array
-// const homePlantArr = [
-//   {image: 'test-images/white_oak.jpg', name: 'White Oak', description: 'Oaks can be propagated easily from acorns and grow well in moderately moist rich soil or dry sandy soil.'},
-//   {image: 'test-images/red_maple.jpg', name: 'Red Maple', description: 'Deciduous trees  often grown for the shade they produce and their exceptional autumn color'}
-// ]
 
-// const beachPlantArr = [
-//   {image: 'source', name: 'beech', description: 'get it??'},
-//   {image: 'source', name: 'dunes', description: 'honestly i dont know'},
-//   {image: 'source', name: 'beech', description: 'get it??'}
-// ]
 console.log(beachPlantArr);
 
 // display current plants

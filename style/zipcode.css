@@ -39,6 +39,15 @@ body {
   cursor: pointer;
   background: green;
   color: white;
+  transition: opacity .1s;
+}
+
+.search-button:hover {
+  opacity: 0.8;
+}
+
+.search-button:active {
+  opacity: 0.6;
 }
 
 .plant-list {
@@ -69,6 +78,17 @@ body {
   font-size: 15px;
   cursor: pointer;
   color: white;
+  transition: opacity .15s;
+}
+
+.see-more-button:hover, 
+.add-button:hover {
+  opacity: 0.8;
+}
+
+.see-more-button:active,
+.add-button:active {
+  opacity:0.5;
 }
 
 .see-more-button {
