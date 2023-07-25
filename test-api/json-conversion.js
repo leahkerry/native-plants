@@ -94,7 +94,7 @@ Arr.forEach((plant) => {
   console.log(plant.common_name);
   //html += `<img src="${plant.image_url}">`;
   html += `<div>
-            ${plant.common_name} 
+            <div>${plant.common_name}</div>
             <img class="plant-image" src="${plant.image_url}"> 
           </div>`
 });

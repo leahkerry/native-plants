@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>Enter your zipcode</div>
+  <div>
+    <input placeholder = "Type your zipcode" 
+          class="js-zip-input" 
+          onkeydown="handleEnter(event)">
+
+    <button class="js-search-button search-button" 
+            onclick="searchZip();">Search</button>
+  </div>
+  
+  <div class="js-output-zone"></div>
+  <img src = "https://h2.commercev3.net/cdn.brecks.com/images/Zone_map4.gif">
+
+  <script src="explore.js"></script>
+  <script src = "zipcode-to-zone.js"></script>
+</body>
+</html>
