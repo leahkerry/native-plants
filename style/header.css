@@ -1,37 +1,37 @@
 .header {
-  background-color: rgb(212, 187, 180);
+  background-color: #88A570;
   display: flex;
-  height: 75px;
+  height: 100px;
   position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  border-bottom: 1px solid rgb(181, 190, 204) ;
+  top: 3cqw;
+  right: 10%;
+  left: 10%;
   z-index: 100;
-  align-items: center;
+  align-items: stretch;
+  justify-content: space-evenly;
 }
 
-.right-section {
-  right: 0;
+.nav-item {
+  transition: background-color 0.28s;
   display: flex;
-  /* background-color: pink; */
   align-items: center;
-  height: 100%;
-  justify-content: flex-end;
-  margin-left: 1dvh;
-  /* position: relative; */
-  
+
 }
 
 .nav-link {
   margin: 15px;
-  color: rgb(31, 20, 13);
+  color: #FFF6EB;
   text-decoration: none;
-  font-size: 20px;
-  font-family: Azeret Mono;
-  transition: all 0.9s ease-out;
+  font-size: 30px;
+  font-family: 'Paytone One', sans-serif;
+  top: 50%
 }
 
-.nav-link {
-  
+.nav-item:hover {
+  background-color: rgba(28, 40, 66, 0.25);
+  cursor: pointer;
+}
+
+.nav-link:active {
+
 }
