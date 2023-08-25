@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="zipcode.css">
+</head>
+<body>
+  <div class = "js-content content">
+    <div class = "search-title">
+        Search for native trees in your area
+    </div>
+
+    <div class="search-line">
+        <input placeholder = "Type your zipcode" 
+        class="js-zip-input zip-input" 
+        onkeydown="handleEnter(event)"> 
+
+        <button class="js-search-button search-button" 
+                onclick="searchZip();">
+            Search
+        </button>
+    </div>
+
+
+    <div class="js-zipcode-text"></div>
+    <div class="js-plant-list plant-list"></div>
+    <script src="../data/plant-data.js"></script>
+    <script src="zipcode.js"></script>
+</div>
+
+</body>
+</html>
