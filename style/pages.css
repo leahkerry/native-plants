@@ -1,5 +1,7 @@
 :root {
   --light-text: #FFF6EB;
+  --dark-text: #2E1900;
+  --brown-text: #552F0C;
   /* --light-text: #9e8d78; */
   text: rgb(211, 135, 135, 30);
   --light-blue: #7CC8C8;
@@ -7,10 +9,12 @@
 
 body {
   margin-top: 100px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 0px;
+  margin-right: 0px;
   background-color: #FFF6EB;
+
 }
+
 
 
 button {
@@ -27,13 +31,35 @@ button {
   z-index: 200;
 }
 
-.content{
+h1 {
+  font-family: 'Paytone One', sans-serif;
+  font-size: 28px;
+  color: var(--dark-text);
+}
+
+p {
+  color: var(--brown-text);
+  font-family: 'Actor', sans-serif;
+  font-size: 20px;
+  line-height: 170%;
+}
+/* .content{
   display: grid;
   grid-template-columns: repeat(12,1fr);
   grid-template-rows: repeat(30, minmax(10px,auto));
   max-width: 100%;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
+
+} */
+
+.content {
+  display: grid;
+  grid-row-gap: 10px;
+  max-width: 100%;
+  grid-template-rows: repeat(30, minmax(200px,auto));
+  margin-left: 10%;
+  margin-right: 10%;
 
 }
 .content div{
@@ -44,6 +70,50 @@ button {
 .content div:nth-child(even) {
   background: #777;
 }
+
+.deal-natives {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  grid-gap: 10px;
+}
+
+.deal-natives-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.movement {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  grid-gap: 10px;
+}
+.movement-info {
+  text-align: right;
+}
+.movement-img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .one{
   grid-column: 1 / 8;
   grid-row: 1/ 2;

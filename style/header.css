@@ -14,8 +14,6 @@
 
 .header-block {
   margin-top:-100px;
-  margin-left: -12.5%;
-  margin-right: -12.5%;
 }
 
 .wave {
@@ -46,3 +44,5 @@
   filter: brightness(60%);
   z-index: 0;
 }
+
+
