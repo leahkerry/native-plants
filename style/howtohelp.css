@@ -1,0 +1,80 @@
+:root {
+  --light-text: #FFF6EB;
+  --dark-text: #2E1900;
+  --brown-text: #552F0C;
+  --auburn: #B96212;
+  --light-beige: #E4CFB6;
+  --light-brown: #C6A688 ;
+  --green-reg: #739055;
+  --light-blue: #7CC8C8;
+}
+
+.help-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+#take-garden-btn {
+  background-color: rgb(240, 133, 26);
+  font-size: 25px;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-bottom: 50px;
+}
+
+p.help-intro-p {
+  padding-left: 10%;
+  padding-right: 10%
+}
+
+.side-img{
+  position: relative;
+  left: -15%;
+  width: 45%;
+  height: 100%;
+  object-fit: cover;
+}
+.learn-natives{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.green-box {
+  background-color: var(--green-reg);
+  position: absolute;
+
+  top: 16%;
+  width: 40%;
+  right: 15%;
+  
+}
+
+
+.white-h1 {
+  color: var(--light-text);
+}
+.white-p {
+  color: var(--light-text);
+}
+button.white-btn {
+  background-color: var(--light-beige);
+  color: var(--brown-text);
+  font-family: Actor;
+  font-size: 22px;
+  padding: 20px;
+}
+
+hr {
+  border: none;
+  border-top: 5px dotted var(--dark-text);
+  color: #fff;
+  background-color: #fff;
+  height: 1px;
+  width: 50%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
