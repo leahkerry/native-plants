@@ -36,8 +36,11 @@ p.help-intro-p {
   height: 100%;
   object-fit: cover;
 }
-#advocacy-img {
-
+#left-img {
+  left: 15%;
+}
+#left-box {
+  left: 15%;
 }
 .learn-natives, .advocacy, .comm-garden{
   position: relative;
@@ -55,8 +58,37 @@ p.help-intro-p {
   
 }
 
-.common-invasives {
+#common-invasives {
   background-color: #71AAB2;
+  padding: 0;
+  margin-left: -12.5%;
+  margin-right: -12.5%;
+}
+#common-invasives-container {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 0;
+}
+#common-invasives-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 5%;
+  margin: 0;
+  padding: 0;
+}
+.common-invasives-img {
+  width: 100%;
+  display: block;
+  border: 10px solid var(--light-text);
+  margin-right: auto;
+  margin-left: -10px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  
 }
 
 
@@ -72,6 +104,13 @@ button.white-btn {
   background-color: #A9805B;
   margin-top: 100px;
   margin-bottom: 30px;
+  margin-left: -12.5%;
+  margin-right: -12.5%;
+  padding: 0;
+}
+.donate-box {
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .have-yard {
@@ -89,10 +128,7 @@ button.white-btn {
 .brown-icon {
   width: 80px;
 }
-h2 {
-  font-family: 'Actor', 'sans-serif';
-  color: var(--brown-text);
-}
+
 
 hr {
   border: none;

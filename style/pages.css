@@ -38,6 +38,10 @@ h1 {
   color: var(--dark-text);
   text-decoration: none;
 }
+h2 {
+  font-family: 'Actor', 'sans-serif';
+  color: var(--brown-text);
+}
 h3 {
   font-family: 'Paytone One', sans-serif;
   font-size: 28px;
