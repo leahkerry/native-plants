@@ -34,8 +34,9 @@ button {
 
 h1 {
   font-family: 'Paytone One', sans-serif;
-  font-size: 28px;
+  font-size: 30px;
   color: var(--dark-text);
+  text-decoration: none;
 }
 h3 {
   font-family: 'Paytone One', sans-serif;
@@ -49,6 +50,16 @@ p {
   font-size: 20px;
   line-height: 170%;
 }
+
+.white-h1 {
+  color: var(--light-text);
+  letter-spacing: 2px;
+}
+.white-p {
+  color: var(--light-text);
+}
+
+
 /* .content{
   display: grid;
   grid-template-columns: repeat(12,1fr);

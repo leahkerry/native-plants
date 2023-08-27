@@ -36,35 +36,62 @@ p.help-intro-p {
   height: 100%;
   object-fit: cover;
 }
-.learn-natives{
+#advocacy-img {
+
+}
+.learn-natives, .advocacy, .comm-garden{
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .green-box {
   background-color: var(--green-reg);
   position: absolute;
-
   top: 16%;
   width: 40%;
   right: 15%;
   
 }
 
+.common-invasives {
+  background-color: #71AAB2;
+}
 
-.white-h1 {
-  color: var(--light-text);
-}
-.white-p {
-  color: var(--light-text);
-}
+
 button.white-btn {
   background-color: var(--light-beige);
   color: var(--brown-text);
   font-family: Actor;
   font-size: 22px;
   padding: 20px;
+}
+
+.donate {
+  background-color: #A9805B;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.have-yard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  line-height: 1.4;
+}
+
+.brown-icon {
+  width: 80px;
+}
+h2 {
+  font-family: 'Actor', 'sans-serif';
+  color: var(--brown-text);
 }
 
 hr {
