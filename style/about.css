@@ -2,11 +2,68 @@
   display: grid;
   grid-template-columns: 9fr 3fr;
   gap: 10px;
+
 }
 
 .author-img {
   width: 100%;
+  max-width: 200px;
   object-fit: cover;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
+  padding: 0;
+}
+
+#leah-info, #isa-info{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-sheet {
+  background-color: var(--light-beige);
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.contact-boxes {
+  display: grid;
+  grid-template-columns: 5fr, 7fr;
+  grid-template-rows: repeat(1fr, 4);
+  gap: 10px;
+  column-gap: 30px; 
+}
+
+#message-box {
+  grid-column: 2;
+  grid-row: 1/ 5;
+  padding: 0;
+}
+
+input{
+  min-height: 50px;
+  max-height: 309px;
+  height: 100%;
+  border-radius: 5px;
+  border: 1px solid var(--brown-text);
+  width: 100%;
+  
+}
+
+#name-sect {
+  padding: 0;
+}
+
+#small-input{
+  height: 50px;
+  width: 70%;
+}
+
+#send-button {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  width: 70%
+  
 }
