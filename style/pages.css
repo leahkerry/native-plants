@@ -18,7 +18,7 @@ body {
 
 
 
-button {
+.button {
   display: block;
   border: 0 solid;
   font-family: 'Paytone One', sans-serif;
@@ -30,8 +30,24 @@ button {
   border-radius: 5px;
   padding: 10px;
   z-index: 70;
+  text-decoration: none;
+  width: fit-content;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
+.button:hover{
+  filter: brightness(120%);
+  cursor: pointer;
+}
+a:hover{
+  cursor: pointer;
+  filter: brightness(120%);
+}
+a{
+  text-decoration: underline;
+  color:var(--light-text);
+}
 h1 {
   font-family: 'Paytone One', sans-serif;
   font-size: 30px;
@@ -138,6 +154,20 @@ p {
   font-size: 20px;
   background-color: var(--auburn);
   color: var(--light-text);
+
+  display: block;
+  border: 0 solid;
+
+  margin: 0px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 70;
+  text-decoration: none;
+  width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
   
 }
 

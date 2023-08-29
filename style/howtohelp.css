@@ -92,7 +92,7 @@ p.help-intro-p {
 }
 
 
-button.white-btn {
+#white-btn {
   background-color: var(--light-beige);
   color: var(--brown-text);
   font-family: Actor;
