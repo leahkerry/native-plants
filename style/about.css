@@ -22,6 +22,9 @@
   align-items: center;
 }
 
+form {
+  padding: 30px;
+}
 .contact-sheet {
   background-color: var(--light-beige);
   margin-top: 30px;
@@ -58,7 +61,7 @@ input, textarea{
   padding: 0;
 }
 
-#small-input{
+#small-input, #email, #name{
   height: 50px;
   width: 70%;
 }
