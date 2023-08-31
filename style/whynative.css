@@ -1,24 +1,21 @@
-
+:root {
+    --light-text: #FFF6EB;
+    --dark-text: #2E1900;
+    --brown-text: #552F0C;
+    --auburn: #B96212;
+    --light-beige: #E4CFB6;
+    --light-brown: #C6A688 ;
+    --light-blue: #7CC8C8;
+  }
   
-  body{
-    color: #fff;
-    text-align:center;
+  body {
+    margin-top: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #FFF6EB;
+  
   }
- .content-why{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width:960px;
-    margin: 0 auto;
-  }
-  .content-why div{
-    background: #3bbced;
-    padding: 30px;
-  }
-
-  .contet-why div:nth-child(even){
-    background: #777;
-  }
-  /*
+  
   button {
     display: block;
     border: 0 solid;
@@ -59,14 +56,13 @@
     grid-row-gap: 10px;
   
   } */
-
-  /*
+  
   .content {
     display: grid;
     grid-row-gap: 10px;
     max-width: 100%;
     /* TODO: margin manyally entered bc something wrong w wave */
-  /*
+  
     z-index: 2;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: minmax(200px,auto);
@@ -179,4 +175,4 @@
     padding: 60px;
   }
   
-  */
+  
