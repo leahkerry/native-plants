@@ -131,14 +131,3 @@ p.help-intro-p {
 }
 
 
-hr {
-  border: none;
-  border-top: 5px dotted var(--dark-text);
-  color: #fff;
-  background-color: #fff;
-  height: 1px;
-  width: 50%;
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
-
