@@ -22,6 +22,9 @@
   align-items: center;
 }
 
+form {
+  padding: 30px;
+}
 .contact-sheet {
   background-color: var(--light-beige);
   margin-top: 30px;
@@ -40,23 +43,25 @@
   grid-column: 2;
   grid-row: 1/ 5;
   padding: 0;
+ 
 }
 
-input{
+input, textarea{
   min-height: 50px;
   max-height: 309px;
   height: 100%;
   border-radius: 5px;
   border: 1px solid var(--brown-text);
   width: 100%;
-  
+  resize: vertical;
+  padding: 10px;
 }
 
 #name-sect {
   padding: 0;
 }
 
-#small-input{
+#small-input, #email, #name{
   height: 50px;
   width: 70%;
 }
@@ -64,6 +69,12 @@ input{
 #send-button {
   margin-top: 50px;
   margin-bottom: 30px;
-  width: 70%
-  
+  width: 65%;
+  text-align: center;
+}
+
+.sources a{
+  color: var(--brown-text);
+  font-family: 'Actor', sans-serif;
+  font-size: 20px;
 }

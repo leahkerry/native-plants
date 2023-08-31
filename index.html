@@ -4,49 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Go Native Garden</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Actor&family=Paytone+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/nav-bar.css">
     <link rel="stylesheet" href="style/pages.css">
+    <link rel="stylesheet" href="style/footer.css">
 </head>
 
-<body>
+<body leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
 
-    
     <nav class="nav-bar">
-        
+        <!-- HOME -->
         <div class="nav-item">
             <a href="index.html" class="nav-link">Home</a>
         </div>
+        
+        <!-- WHY NATIVE -->
         <div class="nav-item">
             <a href="pages/whynative.html" class="nav-link">Why native?</a>
         </div>
-        <div class="nav-item">
+
+        <!-- HOW TO HELP -->
+        <div id="howtohelp-buttons" class="nav-item">
             <a href="pages/howtohelp.html" class="nav-link">How to help</a>
+            <div class="dropdown-content">
+                <a href="pages/howtohelp-garden.html" class="nav-link">Caring for a native garden</a>
+            </div>
         </div>
+
+        <!-- ABOUT -->
         <div class="nav-item">
             <a href="pages/about.html" class="nav-link">About</a>
         </div>
             
     </nav>
 
-    <div class="header-block">
+    <div class="header-block" style="background-image: url(../images/headers/cherry_maple.JPG);">
         
-        <img src="images/headers/cherry_maple.JPG" class="header-img">
-        <svg class = "wave" xmlns="http://www.w3.org/2000/svg" 
+        <!-- <img src="images/headers/cherry_maple.JPG" class="header-img"> -->
+        <!-- <svg class = "wave" xmlns="http://www.w3.org/2000/svg" 
             viewBox="0 0 1440 270"><path fill="#FFF6EB" 
             fill-opacity="1" d="M0,128L80,149.3C160,171,320,213,480,218.7C640,224,800,192,960,176C1120,160,1280,160,1360,160L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
-                    </path></svg>
+                    </path></svg> -->
                     
         <div class="header-info">
             <h1 class="page-title">Preserving PA’s biodiversity with native plants</h1>
-            <button>Show me why native</button>
-            <button>How to help</button>
-        
-        
+            <a href="pages/whynative.html" class="button" style="background-color: var(--auburn);">
+                Show me why native
+            </a>
+            <a href="pages/howtohelp.html" class="button" >
+                How to help
+            </a>
         </div>
     </div>
     
@@ -60,13 +71,17 @@
                     They are the backbone to our ecosystems: 
                     they provide life to crucial animal and insect species, 
                     are optimized to support the local climate, 
-                    and are naturally beautiful. <br>
-                    However, harmful invasive plants tend to overtake these 
+                    and are naturally beautiful. </p>
+                <p>However, harmful invasive plants tend to overtake these 
                     plants in their environment, causing widespread description 
                     to the ecosystem.</p>
-                <button>Read more</button>
+                <a href="pages/whynative.html" class="button">
+                   Read more
+                </a>
+                
             </div>
             <img src="images/largetree-person.png" class="deal-natives-img">
+            <!-- Image source: https://commons.wikimedia.org/w/index.php?search=native+trees+pennsylvania&title=Special:MediaSearch&go=Go&type=image -->
             
         </div>
 
@@ -83,13 +98,15 @@
                 <h1>-Invasive</h1>
                 <p>An introduced plant that spreads and causes damage to nearby species.</p>
             </div>
-            <button class="see-native-invasive-btn">See plants native and invasive to my area</button>
+            <a class="see-native-invasive-btn" href ="https://www.nwf.org/nativeplantfinder/plants" target="_blank">
+                See plants native and invasive to my area
+            </a>
 
         </div>
 
         <div class ="movement">
             <div >
-                <img src="images/nativeMvmt.png" class="movement-img">
+                <img src="images/hand-picking.jpg" class="movement-img">
             </div>
             
             <div class="movement-info">
@@ -101,16 +118,17 @@
 
         </div>
 
+        <hr>
         <div class ="why-you">
             <h1 class="why-you-h1">Why we need YOU</h1>
             <div class="why-you-circles">
-                <div class="circle"><h3>Most nursery plants are non-natives</h3></div>
-                <div class="circle" style="background-color: #875959;"><h3>Only 1/4 people specifically buy native plants</h3></div>
-                <div class="circle"><h3>150,000,000 acres of habitat lost to urban sprawl</h3></div>
+                <div class="circle" style="background-color: #9D7A5A;"><h3>Most nursery plants are non-natives</h3></div>
+                <div class="circle" style="background-color: var(--light-brown);"><h3>Only 1/4 people specifically buy native plants</h3></div>
+                <div class="circle" style="background-color: #C8A07C;"><h3>150,000,000 acres of habitat lost to urban sprawl</h3></div>
             </div>
             <p>By learning about why you need to care about this issue, you can prevent the spread of invasives, spread the word on the importance of natives, and help to bring back the biodiversity of your home!
             </p>
-            <button>How to help</button>
+            <a href="pages/howtohelp.html" class="button" style="background-color: rgb(236, 113, 113); padding: 10px 30px;">How to help</a>
         </div>
 
 
@@ -148,6 +166,14 @@
             <button>How to help<button>
         </div> -->
     </div>
+    <div style="clear: both"></div>
+    
+    <footer>
+        <div class="footer-div">
+            <img class="mail-icon" src="images/icons/mail_icon.png">
+            <p class="footer-txt">gonativegarden@gmail.com</p>
+        </div>
+    </footer>
 
     
 

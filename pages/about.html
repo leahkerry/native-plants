@@ -12,6 +12,33 @@
     <link rel="stylesheet" href="../style/nav-bar.css">
     <link rel="stylesheet" href="../style/pages.css">
     <link rel="stylesheet" href="../style/about.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    
+    <script src="../scripts/form.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('A7NUVtlfDKwdUVAB2');
+        })();
+    </script>
+    
+    <!-- <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script> -->
 </head>
 
 <body>
@@ -23,27 +50,36 @@
         <div class="nav-item">
             <a href="whynative.html" class="nav-link">Why native?</a>
         </div>
-        <div class="nav-item">
-            <a href="howtohelp.html" class="nav-link">How to help</a>
+
+        <!-- HOW TO HELP -->
+        <div id="howtohelp-buttons" class="nav-item">
+            <a href="../pages/howtohelp.html" class="nav-link">How to help</a>
+            <div class="dropdown-content">
+                <a href="../pages/howtohelp-garden.html" class="nav-link">Caring for a native garden</a>
+            </div>
         </div>
+
         <div class="nav-item">
             <a href="about.html" class="nav-link">About</a>
         </div>
             
     </nav>
     
-    <div class="header-block">
+    <div class="header-block" style="background-image: url(../images/headers/willow.png);">
         
-        <img src="../images/headers/willow.png" class="header-img">
-        <svg class = "wave" xmlns="http://www.w3.org/2000/svg" 
-            viewBox="0 0 1440 320"><path fill="#FFF6EB" 
-            fill-opacity="1" d="M0,128L80,149.3C160,171,320,213,480,218.7C640,224,800,192,960,176C1120,160,1280,160,1360,160L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
-                    </path></svg>
+        
         <div class="header-info">
             <h1 class="page-title">About</h1>
         
         </div>
     </div>
+
+    <!-- <svg class = "wave" xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 1440 320"><path fill="#FFF6EB" 
+    fill-opacity="1" d="M0,128L80,149.3C160,171,320,213,480,218.7C640,224,800,192,960,176C1120,160,1280,160,1360,160L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+            </path></svg> -->
+
+
 
     <div class="content">
         <div class="main-about">
@@ -59,7 +95,7 @@
                     <h2 style="text-align: center;">Leah Kerry</h2>
                 </div>
                 <div id="isa-info">
-                    <img src="../images/isa.png" class="author-img">
+                    <img src="../images/isa2.jpg" class="author-img">
                     <h2 style="text-align: center;">Isabella Bock</h2>
                 </div>
             </div>
@@ -69,29 +105,62 @@
         <h2 style="text-align: center;">If you have feedback, questions, or comments, please feel free to contact us below</h2>
 
 
-        <div class="contact-sheet">
+        <div class="contact-sheet" >
             <h1>Send us a message!</h1>
             <div class="contact-boxes">
+                
+                <!-- NAME -->
                 <div id="name-sect">
                     <p>Name:</p>
-                    <input id="small-input">
+                    <input type="text" id="name" placeholder="Your name" required>
                 </div>
+
+                <!-- EMAIL -->
                 <div id="name-sect">
                     <p>Email address:</p>
-                    <input id="small-input">
+                    <input type="email" id="email" placeholder="You email" required>
                     
                 </div>
-                <button id="send-button">Send</button>
+
+                <!-- SEND -->
+                <button class="button" id="send-button" onclick="SendMail()">Send</button>
                 
+                <!-- MESSAGE -->
                 <div id="message-box">
                     <p>Message:</p>
-                    <input>
+                    <textarea id="message" placeholder="Your message"></textarea>
                 </div>
                     
                 
             </div>
         </div>
+
+        <div class="sources">
+            <p>Sources:</p>
+            <ul>
+                <li> <a href="https://www.audubon.org/content/why-native-plants-matter" target="_blank">Audubon Society</a></li>
+                <li> <a href="https://www.dcnr.pa.gov/Conservation/WildPlants/LandscapingwithNativePlants/Pages/default.aspx#:~:text=Bird%20Food%3A%20Native%20plants%20provide,promotes%20and%20tracks%20pollinator%20plantings." target="_blank">PA department of conservation and natural resources</a></li>
+                <li> 
+                    <a href="https://www.asla.org/nativeplantssavemoney.aspx" target="_blank">American society of landscape architects</a>
+                </li>
+                <li> 
+                    <a href="https://emswcd.org/native-plants/native-plant-benefits/" target="_blank">East Multnomah soil and water conservation disctrict</a>
+                </li>
+                <li> 
+                    <a href="https://choosenativeplants.com/" target="_blank">Choose native plants PA</a>
+                </li>
+                <li> 
+                    <a href="https://www.nwf.org/Home/Latest-News/Press-Releases/2022/5-02-22-Consumer-Gardening-Report" target="_blank">National wildlife federation</a>
+                </li>
+            </ul>
+        </div>
     </div>
+    <footer>
+        <div class="footer-div">
+            <img class="mail-icon" src="../images/icons/mail_icon.png">
+            <p class="footer-txt">gonativegarden@gmail.com</p>
+        </div>
+    </footer>
 
 </body>
 </html>
