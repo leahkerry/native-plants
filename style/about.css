@@ -72,3 +72,9 @@ input, textarea{
   width: 65%;
   text-align: center;
 }
+
+.sources a{
+  color: var(--brown-text);
+  font-family: 'Actor', sans-serif;
+  font-size: 20px;
+}
