@@ -67,65 +67,82 @@
             </div>
             <img src="../images/birch2.png" class="birch2">
         </div>
-        <div id ="power">
-            <div id="power-h1"> <h1>The power of native plants:</h1></div>
-            <div class="bio">
-                <h1>Maintain biodiversity</h1>
-                <img src="../images/biodiversity.png" class = "bio-img">
-            </div>
-            <div class="combat">
-                <h1>Combat climate change</h1>
-                <img src="../images/co2.png" class = "bio-img">
-            </div>
-            <div class="durable">
-                <h1>Durable and easy to maintain</h1>
-                <img src="../images/snow.png" class = "bio-img">
-            </div>
-            <div id="power-info">
-                <div id="top"><p>Since native plants have adapted to local climate, they will survive through harsh weather conditions like frost and drought
-                    Because of this, natural landscapes require</p></div>
-                <img src="../images/flowericon.png" class = "flower1">
-                <div id="bullets"><p>less chemicals <br>less upkeep<br>less water<br>less money</p></div>
-                <img src="../images/flowericon.png" class = "flower2">
-                <div id="bottom"><p>Making them a great option for you and the environment!</p></div>
-            </div>
-        </div>
 
-        <div id="callToAction">
-            <img src="../images/callTo.png" class = "flower2">
-            <h1 id ="header"> A call to action <h1>
-            <div id = "lawns"> <h1> 40 Million <h1> <p>acres of lawns in the United States</p> </h1></div>
-            <p id = "text">It is our responsibility to carefully use our
+        
+
+
+        
+        
+        
+    </div>
+    <div id ="power">
+        <div id="power-h1"> <h1>The power of native plants:</h1></div>
+        <div id="bio">
+            <img src="../images/biodiversity.png" class = "bio-img">
+            <h1>Maintain biodiversity</h1>
+            
+        </div>
+        <div id="combat">
+            <img src="../images/co2.png" class = "bio-img">
+            <h1>Combat climate change</h1>
+            
+        </div>
+        <div id="durable">
+            <img src="../images/snow.png" class = "bio-img">
+            <h1>Durable and easy to maintain</h1>
+            
+        </div>
+        <div id="power-info">
+            <div id="top"><p>Since native plants have adapted to local climate, they will survive through harsh weather conditions like frost and drought
+                Because of this, natural landscapes require</p></div>
+            <img src="../images/flowericon.png" class = "flower1">
+            <div id="bullets"><p>- less chemicals <br>- less upkeep<br>- less water<br>- less money</p></div>
+            <img src="../images/flowericon.png" class = "flower2">
+            <div id="bottom"><p>Making them a great option for you and the environment!</p></div>
+        </div>
+    </div>
+
+    <div id="callToAction">
+        
+        <img src="../images/callTo.png" id = "callImg">
+        </div id="textBox">
+            <div id="callHeader"><h1 id ="header"> A call to action <h1> 40 Million <h1> <p>acres of lawns in the United States</p>
+            </h1> <p id = "text">It is our responsibility to carefully use our
                 lawn space in order to conserve the earth that we live on. 
                 And natives are the obvious choice that will benefit both 
                 humans and the ecosystem. Common mowed lawns pose threats 
                 to the environment as well as cost 5x as much as natural/native 
-                landscapes to upkeep over a 10 year period</p>
-
-            
+                landscapes to upkeep over a 10 year period</p></div>
         </div>
-
-        <div id="ourMission">
-            <h1>Our Mission:</h1>
-            <p> Our mission is to help educate the population about the importance of native and invasive plants. Through this we hope to preserve biodiversity and combat climate change: <br>
-                Every time you go out for a walk, you are probably walking right by several invasive plants and don’t even know it. Invasive plants put our natural landscape at risk and disrupt the ecosystem. <br>
-                We live in a state with incredible biodiversity, yet most know little about the kinds of plants they see each day. Spreading knowledge and excitement for the plants around us will encourage people to care for their local ecosystems. </p>
-                <h1>The beauty of native species<h1>
-        </div>
-
+        
         
     </div>
 
+    <div id="ourMission">
+        <h1>Our Mission:</h1>
+        <p> Our mission is to help educate the population about the importance of native and invasive plants. Through this we hope to preserve biodiversity and combat climate change: <br><br>
+            Every time you go out for a walk, you are probably walking right by several invasive plants and don’t even know it. Invasive plants put our natural landscape at risk and disrupt the ecosystem. <br><br>
+            We live in a state with incredible biodiversity, yet most know little about the kinds of plants they see each day. Spreading knowledge and excitement for the plants around us will encourage people to care for their local ecosystems. <br> </p>
+            <h1>The beauty of native species<h1>
+    </div>
+
     <div id="beauty">
+
         <img src="../images/yellow.png" class = "flower2">
         <img src="../images/daisies.png" class = "flower2">
         <img src="../images/fallLeaves.png" class = "flower2">
         <img src="../images/purple.png" class = "flower2">
+        <div id="conclusion">On top of their many benefits, native plants are some of the most colorful and vibrant plant species and make a great addition to any landscape. </div>
+        <button id="seePlants">See plants native to my area</button>
     </div>
+
+    
+
+    
 
     <style>
         body{
-            color: #fff;
+            /*color: #fff;*/
             text-align:center;
         }
         #content-why{
@@ -133,7 +150,9 @@
             
             max-width:960px;
             margin: 0 auto;
+            padding: 5%;
         }
+        /*
         #content-why div{
             background: #3bbced;
             padding: 30px;
@@ -141,31 +160,69 @@
 
         #content-why div:nth-child(even){
             background: #777;
-        }
+        }*/
         #intro{
             display: grid;
             grid-template-columns: 1fr 4fr 1fr;
+            grid-column-gap: 20px;
 
         }
         #text{
             display: grid;
+            padding: 10px;
             justify-items: center;
         }
         #power{
+            color: white;
             display:grid;
-            grid-template-columns: repeat(3, 1fr);
+            background: #E4CFB6;
+            margin: 0;
+            grid-template-columns: repeat(14, 1fr);
             grid-template-rows: repeat(3, minmax(10px, auto));
+            grid-row-gap: 5%;
+            grid-column-gap: 20px;
+            padding: 5%;
+            
         }
         #power-h1{
-            grid-column: 1 / 4; 
+            grid-column: 6 / 11;
+        }
+        #bio{
+            display:grid;
+            justify-items: center;
+            padding: 5px;
+            color: white;
+            grid-column: 2 / 6;
+            background: #739055;
+        }
+        #combat{
+            display: grid;
+            grid-template-rows: repeat(2, minmax(10px, auto));
+            justify-items: center;
+            align-items: center;
+            color: white;
+            justify-items: start;
+            grid-column: 6 / 10;
+            background: #7CC8C8;
+            padding: 10px;
+        }
+        #durable{
+            justify-items: center;
+            padding: 10px;
+            display: grid;
+            color: white;
+            grid-column: 10 / 14;
+            background: #71AAB2;
         }
         #power-info{
-            grid-column: 1 / 4;
+            grid-column: 1 / 16;
             display: grid;
+            background: #FFF6EB;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(3, minmax(10px, auto));
             justify-items: center;
             align-items: end;
+            
         }
         #top{
             grid-column: 1 / 4;
@@ -173,6 +230,7 @@
         #bullets{
             grid-column: 2 / 3;
             align-items: start;
+            text-align: left;
         }
         #bottom{
             grid-column: 1 / 4;
@@ -181,15 +239,40 @@
             justify-items: center;
         }
         #callToAction{
+
             display: grid;
-            grid-template-columns: 5fr 7fr;
+            text-align: left;
+            margin: 0;
+            padding: 5%;
+            grid-template-columns: repeat(16, 1fr);
             grid-template-rows: repeat(3, minmax(10px, auto));
         }
-        #lawns{
-            grid-column: 2 / 3;
+        #callImg{
+            grid-column: 3 / 7;
         }
-        #text{
-            grid-column: 2 / 3;
+        #box{
+            grid-column: 8 / 17;
+            background-color: #739055;
+            display: grid;
+            
+        }
+        
+
+        #ourMission{
+            display: grid;
+            max-width:960px;
+            margin: 0 auto;
+            text-align: start;
+        }
+        #beauty{
+            display: grid;
+            grid-template-columns: repeat(4, minmax(10px, auto));
+            justify-content: center;
+            text-align: center;
+            align-items: start;
+            
+            margin: 0;
+            padding: 10px;
         }
         
         
@@ -214,24 +297,6 @@
         
         </div>
 
-        <div class ="power">
-            <h1 class="power-h1">The power of native plants:</h1>
-            <div class="bio">
-                <h1>Maintain biodiversity</h1>
-                <img src="../images/birch1.png" class = "bio-img">
-            </div>
-            <div class="combat">
-                <h1>Combat climate change</h1>
-                <img src="../images/birch1.png" class = "bio-img">
-            </div>
-            <div class="durable">
-                <h1>Durable and easy to maintain</h1>
-                <img src="../images/birch1.png" class = "bio-img">
-            </div>
-            <div class="power-info">
-                <p>Since native plants have adapted to local climate, they will survive through harsh weather conditions like frost and drought
-                    Because of this, natural landscapes require </p>
-            </div>
 
 
         <footer>
