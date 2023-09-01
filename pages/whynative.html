@@ -10,8 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Actor&family=Paytone+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/header.css">
     <link rel="stylesheet" href="../style/nav-bar.css">
+    <link rel="stylesheet" href="../style/whynative.css">
     <link rel="stylesheet" href="../style/pages.css">
     <link rel="stylesheet" href="../style/footer.css">
+
+    <script src="../scripts/power-natives.js"></script>
 </head>
 
 <body>
@@ -35,7 +38,7 @@
         </div>
             
     </nav>
-    <div class="header-block" style="background-image: url(../images/headers/cherry_maple.JPG);">
+    <div class="header-block" style="background-image: url(../images/headers/red-maple.jpg);">
         
         <!-- <svg class = "wave" xmlns="http://www.w3.org/2000/svg" 
             viewBox="0 0 1440 320"><path fill="#FFF6EB" 
@@ -47,255 +50,108 @@
         
         </div>
     </div>
+    <div class="content">
+        <div id="content-why">
 
-    <div id="content-why">
+            <div id="intro">
+                <img src="../images/birch1.png" class="birch1">
+                <div id="text">
+                    <p>Plants native to the local ecosystem are more than a 
+                        part of a lawn- they play an active role in maintaining 
+                        biodiversity and life for all of us. They create 
+                        healthier places for people to live in, and on top of that, 
+                        are easy to take care of and naturally beautiful
+                        </p>
+                        <img src="../images/leaficon.png" class="leaf">
+                        <p>
+                        Read on to find out the countless ways that 
+                        the earth benefits from it’s native ecosystem.</p>
+                        
+                </div>
+                <img src="../images/birch2.png" class="birch2">
+            </div>
+    
+            
+    
+    
+            
+            
+            
+        </div>
 
-        <div id="intro">
-            <img src="../images/birch1.png" class="birch1">
-            <div id="text">
-                <p>Plants native to the local ecosystem are more than a 
-                    part of a lawn- they play an active role in maintaining 
-                    biodiversity and life for all of us. They create 
-                    healthier places for people to live in, and on top of that, 
-                    are easy to take care of and naturally beautiful
-                    </p>
-                    <img src="../images/leaficon.png" class="leaf">
-                    <p>
-                    Read on to find out the countless ways that 
-                    the earth benefits from it’s native ecosystem.</p>
+        <div id ="power">
+            <div id="power-h1"> <h1>The power of native plants:</h1></div>
+            <div id="bio" onclick="bio_box(1)">
+                <img src="../images/biodiversity.png" class = "bio-img">
+                <h1>Maintain biodiversity</h1>
+                
+            </div>
+            <div id="combat" onclick="bio_box(2)">
+                <img src="../images/co2.png" class = "bio-img">
+                <h1>Combat climate change</h1>
+                
+            </div>
+            <div id="durable" onclick="bio_box(3)">
+                <img src="../images/snow.png" class = "bio-img">
+                <h1>Durable and easy to maintain</h1>
+                
+            </div>
+            <div id="power-info" >
+                <div id="top"><p>Since native plants have adapted to local climate, they will survive through harsh weather conditions like frost and drought.
+                    Because of this, natural landscapes require</p></div>
+                <img src="../images/flowericon.png" id = "flower1">
+                <div id="bullets"><p>&#x2022 less chemicals <br>&#x2022 less upkeep<br>&#x2022 less water<br>&#x2022 less money</p></div>
+                <img src="../images/flowericon.png" id = "flower2">
+                <div id="bottom"><p>Making them a great option for you and the environment!</p></div>
+            </div>
+        </div>
+    
+        <div id="callToAction">
+            
+            <img src="../images/callTo.png" id = "callImg">
+            <div id="textBox">
+                <div id="callHeader">
+                    <h1 id ="header"> A call to action </h1>
+                    <div style="border-radius: 5px; text-align: center; margin: 0; padding: 2px 10px; background-color: rgb(190, 226, 190);">
+                        <h1 id="forty-mil"> 40 Million <h1> 
+                        <p style="margin: 5px">acres of lawns in the United States</p>
+                    </div>
                     
+                 <p id = "text">It is our responsibility to carefully use our
+                    lawn space in order to conserve the earth that we live on. 
+                    And natives are the obvious choice that will benefit both 
+                    humans and the ecosystem. Common mowed lawns pose threats 
+                    to the environment as well as cost 5x as much as natural/native 
+                    landscapes to upkeep over a 10 year period</p>
+                </div>
             </div>
-            <img src="../images/birch2.png" class="birch2">
-        </div>
-
-        
-
-
-        
-        
-        
-    </div>
-    <div id ="power">
-        <div id="power-h1"> <h1>The power of native plants:</h1></div>
-        <div id="bio">
-            <img src="../images/biodiversity.png" class = "bio-img">
-            <h1>Maintain biodiversity</h1>
+            
             
         </div>
-        <div id="combat">
-            <img src="../images/co2.png" class = "bio-img">
-            <h1>Combat climate change</h1>
-            
-        </div>
-        <div id="durable">
-            <img src="../images/snow.png" class = "bio-img">
-            <h1>Durable and easy to maintain</h1>
-            
-        </div>
-        <div id="power-info">
-            <div id="top"><p>Since native plants have adapted to local climate, they will survive through harsh weather conditions like frost and drought
-                Because of this, natural landscapes require</p></div>
-            <img src="../images/flowericon.png" class = "flower1">
-            <div id="bullets"><p>- less chemicals <br>- less upkeep<br>- less water<br>- less money</p></div>
-            <img src="../images/flowericon.png" class = "flower2">
-            <div id="bottom"><p>Making them a great option for you and the environment!</p></div>
-        </div>
-    </div>
-
-    <div id="callToAction">
-        
-        <img src="../images/callTo.png" id = "callImg">
-        </div id="textBox">
-            <div id="callHeader"><h1 id ="header"> A call to action <h1> 40 Million <h1> <p>acres of lawns in the United States</p>
-            </h1> <p id = "text">It is our responsibility to carefully use our
-                lawn space in order to conserve the earth that we live on. 
-                And natives are the obvious choice that will benefit both 
-                humans and the ecosystem. Common mowed lawns pose threats 
-                to the environment as well as cost 5x as much as natural/native 
-                landscapes to upkeep over a 10 year period</p></div>
-        </div>
-        
-        
-    </div>
-
-    <div id="ourMission">
-        <h1>Our Mission:</h1>
-        <p> Our mission is to help educate the population about the importance of native and invasive plants. Through this we hope to preserve biodiversity and combat climate change: <br><br>
-            Every time you go out for a walk, you are probably walking right by several invasive plants and don’t even know it. Invasive plants put our natural landscape at risk and disrupt the ecosystem. <br><br>
-            We live in a state with incredible biodiversity, yet most know little about the kinds of plants they see each day. Spreading knowledge and excitement for the plants around us will encourage people to care for their local ecosystems. <br> </p>
-            <h1>The beauty of native species<h1>
-    </div>
-
-    <div id="beauty">
-
-        <img src="../images/yellow.png" class = "flower2">
-        <img src="../images/daisies.png" class = "flower2">
-        <img src="../images/fallLeaves.png" class = "flower2">
-        <img src="../images/purple.png" class = "flower2">
-        <div id="conclusion">On top of their many benefits, native plants are some of the most colorful and vibrant plant species and make a great addition to any landscape. </div>
-        <button id="seePlants">See plants native to my area</button>
-    </div>
-
     
-
-    
-
-    <style>
-        body{
-            /*color: #fff;*/
-            text-align:center;
-        }
-        #content-why{
-            display: grid;
-            
-            max-width:960px;
-            margin: 0 auto;
-            padding: 5%;
-        }
-        /*
-        #content-why div{
-            background: #3bbced;
-            padding: 30px;
-        }
-
-        #content-why div:nth-child(even){
-            background: #777;
-        }*/
-        #intro{
-            display: grid;
-            grid-template-columns: 1fr 4fr 1fr;
-            grid-column-gap: 20px;
-
-        }
-        #text{
-            display: grid;
-            padding: 10px;
-            justify-items: center;
-        }
-        #power{
-            color: white;
-            display:grid;
-            background: #E4CFB6;
-            margin: 0;
-            grid-template-columns: repeat(14, 1fr);
-            grid-template-rows: repeat(3, minmax(10px, auto));
-            grid-row-gap: 5%;
-            grid-column-gap: 20px;
-            padding: 5%;
-            
-        }
-        #power-h1{
-            grid-column: 6 / 11;
-        }
-        #bio{
-            display:grid;
-            justify-items: center;
-            padding: 5px;
-            color: white;
-            grid-column: 2 / 6;
-            background: #739055;
-        }
-        #combat{
-            display: grid;
-            grid-template-rows: repeat(2, minmax(10px, auto));
-            justify-items: center;
-            align-items: center;
-            color: white;
-            justify-items: start;
-            grid-column: 6 / 10;
-            background: #7CC8C8;
-            padding: 10px;
-        }
-        #durable{
-            justify-items: center;
-            padding: 10px;
-            display: grid;
-            color: white;
-            grid-column: 10 / 14;
-            background: #71AAB2;
-        }
-        #power-info{
-            grid-column: 1 / 16;
-            display: grid;
-            background: #FFF6EB;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, minmax(10px, auto));
-            justify-items: center;
-            align-items: end;
-            
-        }
-        #top{
-            grid-column: 1 / 4;
-        }
-        #bullets{
-            grid-column: 2 / 3;
-            align-items: start;
-            text-align: left;
-        }
-        #bottom{
-            grid-column: 1 / 4;
-        }
-        #flower1{
-            justify-items: center;
-        }
-        #callToAction{
-
-            display: grid;
-            text-align: left;
-            margin: 0;
-            padding: 5%;
-            grid-template-columns: repeat(16, 1fr);
-            grid-template-rows: repeat(3, minmax(10px, auto));
-        }
-        #callImg{
-            grid-column: 3 / 7;
-        }
-        #box{
-            grid-column: 8 / 17;
-            background-color: #739055;
-            display: grid;
-            
-        }
+        <div id="ourMission">
+            <h1>Our Mission:</h1>
+            <p> Our mission is to help educate the population about the importance of native and invasive plants. Through this we hope to preserve biodiversity and combat climate change: <br><br>
+                Every time you go out for a walk, you are probably walking right by several invasive plants and don’t even know it. Invasive plants put our natural landscape at risk and disrupt the ecosystem. <br><br>
+                We live in a state with incredible biodiversity, yet most know little about the kinds of plants they see each day. Spreading knowledge and excitement for the plants around us will encourage people to care for their local ecosystems. <br> </p>
+                
+        </div>
         
-
-        #ourMission{
-            display: grid;
-            max-width:960px;
-            margin: 0 auto;
-            text-align: start;
-        }
-        #beauty{
-            display: grid;
-            grid-template-columns: repeat(4, minmax(10px, auto));
-            justify-content: center;
-            text-align: center;
-            align-items: start;
-            
-            margin: 0;
-            padding: 10px;
-        }
-        
-        
-        </style>
-    
-        <!--div class ="why-intro">
-            <div class="why-intro-info">
-                <p>Plants native to the local ecosystem are more than a 
-                    part of a lawn- they play an active role in maintaining 
-                    biodiversity and life for all of us. They create 
-                    healthier places for people to live in, and on top of that, 
-                    are easy to take care of and naturally beautiful <br>
-                    Read on to find out the countless ways that 
-                    the earth benefits from it’s native ecosystem.</p>
+        <div id="beauty-img-boxes">
+            <img src="../images/yellow.png" class = "flower2">
+            <img src="../images/daisies.png" style="width: 200%;" class = "flower2">
+            <img src="../images/fallLeaves.png" class = "flower2">
+            <img src="../images/purple.png" class = "flower2">
+            <div id="beauty">
+                <h1>The beauty of native species</h1>
+                <p id="conclusion">On top of their many benefits, native plants are some of the most colorful and vibrant plant species and make a great addition to any landscape. </p>
+                <a href="https://www.nwf.org/nativeplantfinder/plants" class="button" style="background-color: var(--auburn);" target="_blank">See plants native to my area</a>
+                
             </div>
-            <img src="../images/headers/cherry_maple.JPG" class="why-intro-img1">
-            <img src="../images/birch1.png" class="why-intro-img2">
-
-            
-        </div-->
-
-        
         </div>
+
+
+    </div>
 
 
 
