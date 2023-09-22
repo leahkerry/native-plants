@@ -82,14 +82,11 @@ body{
   grid-column: 1 / 13;
   display: grid;
   background: #FFF6EB;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, minmax(10px, auto));
   justify-items: center;
   align-items: end;
   border: 20px solid #71AAB2;
-
-  padding: 
 }
+
 #top{
   grid-column: 1 / 4;
   padding: 0px;
